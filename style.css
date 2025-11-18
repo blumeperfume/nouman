@@ -1,51 +1,68 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #fdf2f8;
-  color: #333;
+  background: #0d0d0d; /* Black background */
+  color: #f5d77b; /* Gold text */
   margin: 0;
   padding: 0;
 }
 
+/* Header */
 header {
-  background-color: #ffb6c1;
+  background-color: #1a1a1a;
   padding: 20px;
+  border-bottom: 2px solid #d4af37; /* Gold border */
 }
 
 h1 {
   margin: 0;
+  color: #f5d77b; /* Gold */
 }
 
+/* Main body */
 main {
   padding: 20px;
 }
 
-button {
-  background-color: #ff69b4;
+/* Buttons */
+button, .add-to-cart {
+  background-color: #d4af37; /* Gold */
   border: none;
-  color: white;
+  color: black;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
+button:hover, .add-to-cart:hover {
+  background-color: #b8962d; /* Dark gold */
+}
+
+/* Footer */
 footer {
-  background-color: #ffe4e1;
+  background-color: #1a1a1a;
   padding: 10px;
   margin-top: 20px;
+  border-top: 2px solid #d4af37;
+  color: #f5d77b;
 }
+
+/* Product Card */
 .product {
-  background-color: #fff5f7;
+  background-color: #141414;
   border-radius: 12px;
   padding: 16px;
   text-align: center;
   width: 280px;
   margin: 30px auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3); /* Gold glow */
   font-family: 'Poppins', sans-serif;
 }
 
+/* Product Images */
 .product-images img {
   width: 100%;
   height: auto;
@@ -55,42 +72,32 @@ footer {
 
 .product-images img:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); /* Gold glow */
 }
 
+/* Headings */
 h2 {
   font-size: 18px;
   margin-top: 12px;
-  color: #222;
+  color: #f5d77b;
 }
 
+/* Description text */
 p {
   font-size: 13px;
-  color: #555;
+  color: #e0c878;
   margin: 8px 0;
 }
 
-.add-to-cart {
-  background-color: #ff007a;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: 8px;
-  transition: 0.3s;
-}
-
-.add-to-cart:hover {
-  background-color: #e60070;
-}
+/* Price styling */
 .price {
-  font-size: 1.2rem;
-  color: #ff66a3;
+  font-size: 1.3rem;
+  color: #ffd700; /* Bright gold */
   font-weight: bold;
   margin-bottom: 10px;
 }
+
+/* Slider */
 .slider {
   position: relative;
   width: 100%;
@@ -98,6 +105,7 @@ p {
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); 
 }
 
 .slides img {
@@ -110,17 +118,23 @@ p {
   display: block;
 }
 
+/* Next / Prev Arrows */
 .prev, .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgba(212, 175, 55, 0.5); /* Gold transparent */
+  color: black;
   border: none;
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
+  font-weight: bold;
 }
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+.prev:hover, .next:hover {
+  background-color: #d4af37;
+}
